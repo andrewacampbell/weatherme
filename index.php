@@ -27,10 +27,21 @@
 
     <div class="container">
 
-      <div class="main">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+        <div class="row">
+
+            <div class="col-md-6 col-offset-3 center">
+              <h1 class="center white">Weather Finder</h1>
+              <p class="center white lead">Enter your city to get Weather status</p>
+
+              <form action="">
+                <div>
+                  
+                </div>
+                <input type="submit" class="btn btn-success btn-lg">
+              </form>
+            </div>
+
+        </div>
 
     </div><!-- /.container -->
 
