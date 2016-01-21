@@ -1,10 +1,13 @@
-html,body
-{
-  height: 100%;
-  width: 100%;
+html, body{
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
 
 }
 
+body{
+	background: rgba(0,0,0,0.5);
+}
 .container
 {
 	height: 100%;
@@ -12,12 +15,42 @@ html,body
 	background-image:url("../img/bgi.jpg");
 	background-size: cover;
 	background-position: center;
+	padding-top: 200px;
+
+
 
 }
 
 .white{
-	color: ffffff;
+	color: #ffffff;
+}
+.row{
+	background: rgba(0,0,0,0.7);
+	height: inherit;
+	width: inherit;
+	padding-top: 200px;
+	padding-bottom: -200px;
+	margin-top: -200px;
+	position: absolute;
+	
 }
 .center{
 	text-align: center;
+}
+
+.forcast{
+	margin: 20px;
+}
+
+p.center{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+
+.bold{
+	font-weight: bolder;
+}
+h1{
+	font-size: 50px;
 }

@@ -15,9 +15,6 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -29,15 +26,20 @@
 
         <div class="row">
 
-            <div class="col-md-6 col-offset-3 center">
-              <h1 class="center white">Weather Finder</h1>
-              <p class="center white lead">Enter your city to get Weather status</p>
+            <div class="col-md-6 col-md-offset-3 center">
+                <h1 class="center white">Weather Finder</h1>
+                <p class="center white lead bold">Enter your city to get Weather status</p>
 
               <form action="">
-                <div>
-                  
-                </div>
-                <input type="submit" class="btn btn-success btn-lg">
+
+                  <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Eg: New York, Paris, Rome">
+
+                  </div>
+
+                  <input type="submit" class="btn btn-success btn-lg forcast " value="Get Forcast">
+
               </form>
             </div>
 
@@ -45,13 +47,11 @@
 
     </div><!-- /.container -->
 
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-2.2.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
