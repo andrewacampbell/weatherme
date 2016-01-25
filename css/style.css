@@ -5,9 +5,10 @@ html, body{
 
 }
 
-body{
+body {
 	background: rgba(0,0,0,0.5);
 }
+
 .container
 {
 	height: 100%;
@@ -16,9 +17,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	padding-top: 200px;
-
-
-
+	
 }
 
 .white{
@@ -53,4 +52,10 @@ p.center{
 }
 h1{
 	font-size: 50px;
+}
+footer{
+	color: #ffffff;
+	font-size: 14px;
+	padding-top: 250px;
+
 }

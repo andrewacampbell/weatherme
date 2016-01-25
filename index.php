@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,19 +37,21 @@
 
                   </div>
 
-                  <input type="submit" class="btn btn-success btn-lg forcast " value="Get Forcast">
+                  <input type="submit" id="btnweather" class="btn btn-success btn-lg forcast " value="Get Forcast">
 
               </form>
+                 <footer class="center white"> @copy;Copyright Andrew Campbell 20</footer>
             </div>
 
         </div>
-
+           
     </div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
