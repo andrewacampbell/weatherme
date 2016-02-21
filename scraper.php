@@ -1,13 +1,28 @@
 <?php 
-	
-	$city = $_GET['city'];
 
-	$city = str_replace(" ", "", $cit);
-	$output = file_get_contents("http://www.weather-forecast.com/locations/$city/forecasts/latest");
+	try{
 
-	preg_match('/3 Day Weather Forcast Summary:<\/b>
-				<span class="phrase">(.*?)</s', $output, $matches);
+		//$city = $_GET['city'];
 
-	echo $matches[1];
+		//$city = str_replace(" ", "", $city);
+		
+		//$url = urlencode("http://www.weather-forecast.com/locations/paris/forecasts/latest");
+		//$url = urlencode($url);
+		//$output = file_get_contents($url);
+
+		$output = file_get_contents("http://www.weather-forecast.com/locations/paris/forecasts/latest");
+
+		preg_match('/3 Day Weather Forecast Summary:<\/b>(.*?)<\/p/', $output, $matches);
+   
+		// preg_match('/3 Day Weather Forecast Summary:<\/b>
+		//  <span class="phrase">(.*?)</s', $output, $matches);
+
+		print_r($matches[1]);
+
+	}catch(Exception $ex) {
+
+		echo "Error is ", $ex->getMessage();
+	}
+
 
 ?>

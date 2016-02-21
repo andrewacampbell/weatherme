@@ -33,14 +33,20 @@
 
                   <div class="form-group">
 
-                    <input type="text" class="form-control" placeholder="Eg: New York, Paris, Rome">
+                    <input type="text" id="location" class="form-control" placeholder="Eg: New York, Paris, Rome">
 
                   </div>
 
                   <input type="submit" id="btnweather" class="btn btn-success btn-lg forcast " value="Get Forcast">
 
               </form>
-                 <footer class="center white"> @copy;Copyright Andrew Campbell 20</footer>
+                 <div id="success" class="alert alert-success white">Success!</div>
+
+                 <div id="failed" class="alert alert-success white">No Result for that location.</div>
+
+                  <div id="nocity" class="alert alert-success">Please enter a city.</div>
+
+                 <footer class="center white"> &copy; Fizure.inc <?php echo date('Y'); ?></footer>
             </div>
 
         </div>
@@ -52,8 +58,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/script.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
